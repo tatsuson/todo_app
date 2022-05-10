@@ -1,0 +1,938 @@
+2022/05/03 11:16:48 main.go:15: test
+2022/05/07 14:07:23 server.go:3197: http: panic serving [::1]:35694: template: public_navbar.html:5: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc00009a080})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc00009a080})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc0001701c0}, {0xa25a00, 0xaeaa70}, {0xc00010f5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc0001701c0}, 0xc000164100)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc0001701c0}, 0xc000164100)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc0001701c0}, 0xc000164100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc0001701c0}, 0xc000164100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011f360, {0xaed708, 0xc00002c540})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:07:24 server.go:3197: http: panic serving [::1]:35696: template: public_navbar.html:5: unexpected EOF
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc00009a1f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc00009a1f0})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc0000da0e0}, {0xa25a00, 0xaeaa70}, {0xc00010b5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc0000da0e0}, 0xc0000d8000)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc0000da0e0}, 0xc0000d8000)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc0000da0e0}, 0xc0000d8000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc0000da0e0}, 0xc0000d8000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc0000d4000, {0xaed708, 0xc0000980c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:07:36 server.go:3197: http: panic serving [::1]:35702: template: public_navbar.html:5: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc000013100})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc000013100})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc0001701c0}, {0xa25a00, 0xaeaa70}, {0xc00010f5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc0001701c0}, 0xc000164100)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc0001701c0}, 0xc000164100)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc0001701c0}, 0xc000164100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc0001701c0}, 0xc000164100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011f360, {0xaed708, 0xc00002c540})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:07:37 server.go:3197: http: panic serving [::1]:35704: template: public_navbar.html:5: unexpected EOF
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc000013270})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc000013270})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc000170380}, {0xa25a00, 0xaeaa70}, {0xc00010f5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc000170380}, 0xc000164200)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc000170380}, 0xc000164200)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc000170380}, 0xc000164200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc000170380}, 0xc000164200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011f400, {0xaed708, 0xc00002c8c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:07:42 server.go:3197: http: panic serving [::1]:35706: template: public_navbar.html:5: unexpected EOF
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc000096090})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc000096090})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc000170540}, {0xa25a00, 0xaeaa70}, {0xc00010f5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc000170540}, 0xc000164300)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc000170540}, 0xc000164300)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc000170540}, 0xc000164300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc000170540}, 0xc000164300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011f4a0, {0xaed708, 0xc00002cbc0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:07:45 server.go:3197: http: panic serving [::1]:35708: template: public_navbar.html:5: unexpected EOF
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc000096200})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc000096200})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc0000e40e0}, {0xa25a00, 0xaeaa70}, {0xc00010b5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc0000e40e0}, 0xc0000e2000)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc0000e40e0}, 0xc0000e2000)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc0000e40e0}, 0xc0000e2000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc0000e40e0}, 0xc0000e2000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc0000d6000, {0xaed708, 0xc00009a100})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:07:51 server.go:3197: http: panic serving [::1]:35710: template: public_navbar.html:5: unexpected EOF
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc0001a0140})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc0001a0140})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc0001920e0}, {0xa25a00, 0xaeaa70}, {0xc00010f5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc0001920e0}, 0xc000164400)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc0001920e0}, 0xc000164400)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc0001920e0}, 0xc000164400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc0001920e0}, 0xc000164400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc0000d60a0, {0xaed708, 0xc00002cd40})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:09:14 server.go:3197: http: panic serving [::1]:35712: template: public_navbar.html:5: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc000013100})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc000013100})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc0001700e0}, {0xa25a00, 0xaeaa70}, {0xc00010f5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc0001700e0}, 0xc000164100)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc0001700e0}, 0xc000164100)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc0001700e0}, 0xc000164100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc0001700e0}, 0xc000164100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011f400, {0xaed708, 0xc00002c540})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:09:15 server.go:3197: http: panic serving [::1]:35714: template: public_navbar.html:5: unexpected EOF
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc000013270})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc000013270})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc0001702a0}, {0xa25a00, 0xaeaa70}, {0xc00010f5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc0001702a0}, 0xc000164200)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc0001702a0}, 0xc000164200)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc0001702a0}, 0xc000164200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc0001702a0}, 0xc000164200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00018c000, {0xaed708, 0xc00002c8c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:09:20 server.go:3197: http: panic serving [::1]:35716: template: public_navbar.html:5: unexpected EOF
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc000196150})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc000196150})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc00019e0e0}, {0xa25a00, 0xaeaa70}, {0xc00010b5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc00019e0e0}, 0xc00019a000)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc00019e0e0}, 0xc00019a000)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc00019e0e0}, 0xc00019a000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc00019e0e0}, 0xc00019a000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011f4a0, {0xaed708, 0xc000192080})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:09:35 server.go:3197: http: panic serving [::1]:35718: template: public_navbar.html:5: unexpected EOF
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc0001962c0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc0001962c0})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc00019e2a0}, {0xa25a00, 0xaeaa70}, {0xc00010b5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc00019e2a0}, 0xc00019a100)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc00019e2a0}, 0xc00019a100)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc00019e2a0}, 0xc00019a100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc00019e2a0}, 0xc00019a100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00018c0a0, {0xaed708, 0xc0001923c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:09:39 server.go:3197: http: panic serving [::1]:35720: template: public_navbar.html:5: unexpected EOF
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc0000133e0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc0000133e0})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc000170460}, {0xa25a00, 0xaeaa70}, {0xc00010f5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc000170460}, 0xc000164300)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc000170460}, 0xc000164300)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc000170460}, 0xc000164300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc000170460}, 0xc000164300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011f540, {0xaed708, 0xc00002cb40})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:09:47 server.go:3197: http: panic serving [::1]:35722: template: public_navbar.html:5: unexpected EOF
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc000013550})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc000013550})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc000170540}, {0xa25a00, 0xaeaa70}, {0xc00010f5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc000170540}, 0xc000164400)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc000170540}, 0xc000164400)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc000170540}, 0xc000164400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc000170540}, 0xc000164400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011f5e0, {0xaed708, 0xc00002ce40})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:09:48 server.go:3197: http: panic serving [::1]:35724: template: public_navbar.html:5: unexpected EOF
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc000196430})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc000196430})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc00019e460}, {0xa25a00, 0xaeaa70}, {0xc00010b5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc00019e460}, 0xc00019a200)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc00019e460}, 0xc00019a200)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc00019e460}, 0xc00019a200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc00019e460}, 0xc00019a200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00018c140, {0xaed708, 0xc0001926c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:09:53 server.go:3197: http: panic serving [::1]:35726: template: public_navbar.html:5: unexpected EOF
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc0000a2080})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc0000a2080})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc00019e620}, {0xa25a00, 0xaeaa70}, {0xc00010b5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc00019e620}, 0xc00019a300)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc00019e620}, 0xc00019a300)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc00019e620}, 0xc00019a300)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc00019e620}, 0xc00019a300)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00018c1e0, {0xaed708, 0xc0001929c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:09:54 server.go:3197: http: panic serving [::1]:35728: template: public_navbar.html:5: unexpected EOF
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc0000a21f0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc0000a21f0})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc0000ea000}, {0x0, 0x0}, {0xc0000df5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.signup({0xaed4c8, 0xc0000ea000}, 0xc0000e2000)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_auth.go:6 +0x105
+net/http.HandlerFunc.ServeHTTP(0xac7ef8, {0xaed4c8, 0xc0000ea000}, 0xc0000e2000)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc0000ea000}, 0xc0000e2000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc0000ea000}, 0xc0000e2000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc0000d6000, {0xaed708, 0xc0000a00c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:09:55 server.go:3197: http: panic serving [::1]:35732: template: public_navbar.html:5: unexpected EOF
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc0000a22a0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc0000a22a0})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc00019e7e0}, {0x0, 0x0}, {0xc00010b5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.signup({0xaed4c8, 0xc00019e7e0}, 0xc00019a400)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_auth.go:6 +0x105
+net/http.HandlerFunc.ServeHTTP(0xac7ef8, {0xaed4c8, 0xc00019e7e0}, 0xc00019a400)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc00019e7e0}, 0xc00019a400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc00019e7e0}, 0xc00019a400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00018c280, {0xaed708, 0xc000192c00})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:10:13 server.go:3197: http: panic serving [::1]:35734: template: public_navbar.html:5: unexpected EOF
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc000013600})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc000013600})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc0000ea1c0}, {0x0, 0x0}, {0xc0000df5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.signup({0xaed4c8, 0xc0000ea1c0}, 0xc0000e2100)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_auth.go:6 +0x105
+net/http.HandlerFunc.ServeHTTP(0xac7ef8, {0xaed4c8, 0xc0000ea1c0}, 0xc0000e2100)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc0000ea1c0}, 0xc0000e2100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc0000ea1c0}, 0xc0000e2100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011f680, {0xaed708, 0xc0000a0540})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:10:15 server.go:3197: http: panic serving [::1]:35736: template: public_navbar.html:5: unexpected EOF
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc000013770})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc000013770})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc000170620}, {0xa25a00, 0xaeaa70}, {0xc00010f5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc000170620}, 0xc000164600)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc000170620}, 0xc000164600)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc000170620}, 0xc000164600)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc000170620}, 0xc000164600)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011f720, {0xaed708, 0xc00002d240})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/07 14:10:16 server.go:3197: http: panic serving [::1]:35738: template: public_navbar.html:5: unexpected EOF
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa350e0, 0xc000196670})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaeafe0, 0xc000196670})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaed4c8, 0xc0001707e0}, {0xa25a00, 0xaeaa70}, {0xc00010f5a0, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:16 +0x16f
+todo_app/app/controllers.top({0xaed4c8, 0xc0001707e0}, 0xc000164700)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:8 +0x10e
+net/http.HandlerFunc.ServeHTTP(0xac7f00, {0xaed4c8, 0xc0001707e0}, 0xc000164700)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd19220, {0xaed4c8, 0xc0001707e0}, 0xc000164700)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc000170000}, {0xaed4c8, 0xc0001707e0}, 0xc000164700)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00018c320, {0xaed708, 0xc00002d540})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:46:35 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:46:35 server.go:3197: http: panic serving [::1]:59898: template: index.html:1: unexpected "}" in command
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc000184630})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc000184630})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0000c2380}, {0xa80040, 0xc000242300}, {0xc0004273d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0000c2380}, 0xc000236600)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0000c2380}, 0xc000236600)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0000c2380}, 0xc000236600)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0000c2380}, 0xc000236600)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011edc0, {0xaf8288, 0xc00002c580})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:46:35 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:46:35 server.go:3197: http: panic serving [::1]:59896: template: index.html:1: unexpected "}" in command
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc0001848b0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc0001848b0})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0001b4460}, {0xa80040, 0xc0001b2b00}, {0xc0001273d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0001b4460}, 0xc000236000)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0001b4460}, 0xc000236000)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0001b4460}, 0xc000236000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0001b4460}, 0xc000236000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00019c5a0, {0xaf8288, 0xc000186240})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:46:35 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:46:35 server.go:3197: http: panic serving [::1]:59902: template: index.html:1: unexpected "}" in command
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc000184b30})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc000184b30})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0001b4540}, {0xa80040, 0xc0001b2e80}, {0xc00040b3d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0001b4540}, 0xc0000ba400)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0001b4540}, 0xc0000ba400)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0001b4540}, 0xc0000ba400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0001b4540}, 0xc0000ba400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011ee60, {0xaf8288, 0xc00002c640})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:46:35 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:46:35 server.go:3197: http: panic serving [::1]:59904: template: index.html:1: unexpected "}" in command
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc00021e520})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc00021e520})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0001b4620}, {0xa80040, 0xc0001b3100}, {0xc00040f3d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0001b4620}, 0xc0001d4500)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0001b4620}, 0xc0001d4500)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0001b4620}, 0xc0001d4500)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0001b4620}, 0xc0001d4500)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011ef00, {0xaf8288, 0xc00002c700})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:46:35 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:46:35 server.go:3197: http: panic serving [::1]:59906: template: index.html:1: unexpected "}" in command
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc00030eb10})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc00030eb10})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0000c2460}, {0xa80040, 0xc0000cae00}, {0xc00040f3d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0000c2460}, 0xc0000ba700)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0000c2460}, 0xc0000ba700)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0000c2460}, 0xc0000ba700)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0000c2460}, 0xc0000ba700)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc000096320, {0xaf8288, 0xc0000939c0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:46:36 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:46:36 server.go:3197: http: panic serving [::1]:59908: template: index.html:1: unexpected "}" in command
+goroutine 49 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc00030eda0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc00030eda0})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0000c2540}, {0xa80040, 0xc0000cb180}, {0xc00040f3d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0000c2540}, 0xc0000ba900)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0000c2540}, 0xc0000ba900)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0000c2540}, 0xc0000ba900)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0000c2540}, 0xc0000ba900)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc0000963c0, {0xaf8288, 0xc000093e00})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:46:40 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:46:40 server.go:3197: http: panic serving [::1]:59910: template: index.html:1: unexpected "}" in command
+goroutine 70 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc00030f030})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc00030f030})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0000c2620}, {0xa80040, 0xc0000cb480}, {0xc00040f3d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0000c2620}, 0xc0000baa00)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0000c2620}, 0xc0000baa00)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0000c2620}, 0xc0000baa00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0000c2620}, 0xc0000baa00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc000096460, {0xaf8288, 0xc000366240})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:46:42 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:46:42 server.go:3197: http: panic serving [::1]:59912: template: index.html:1: unexpected "}" in command
+goroutine 75 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc00030f2c0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc00030f2c0})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0000c2700}, {0xa80040, 0xc0000cb780}, {0xc00040b3d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0000c2700}, 0xc0001d4d00)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0000c2700}, 0xc0001d4d00)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0000c2700}, 0xc0001d4d00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0000c2700}, 0xc0001d4d00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc000096500, {0xaf8288, 0xc000366680})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:46:42 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:46:42 server.go:3197: http: panic serving [::1]:59914: template: index.html:1: unexpected "}" in command
+goroutine 80 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc00021e610})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc00021e610})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0000c27e0}, {0xa80040, 0xc0000cba80}, {0xc00040b3d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0000c27e0}, 0xc0000bad00)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0000c27e0}, 0xc0000bad00)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0000c27e0}, 0xc0000bad00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0000c27e0}, 0xc0000bad00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc0000965a0, {0xaf8288, 0xc000366ac0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:47:04 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:47:04 server.go:3197: http: panic serving [::1]:59916: template: index.html:1: unexpected "}" in command
+goroutine 62 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc000184fe0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc000184fe0})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0001b47e0}, {0xa80040, 0xc0001b3380}, {0xc00040b3d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0001b47e0}, 0xc000236a00)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0001b47e0}, 0xc000236a00)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0001b47e0}, 0xc000236a00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0001b47e0}, 0xc000236a00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc000240320, {0xaf8288, 0xc000222ec0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:47:04 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:47:04 server.go:3197: http: panic serving [::1]:59918: template: index.html:1: unexpected "}" in command
+goroutine 65 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc00030f6e0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc00030f6e0})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0000c28c0}, {0xa80040, 0xc0000cbc80}, {0xc00040f3d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0000c28c0}, 0xc0000bae00)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0000c28c0}, 0xc0000bae00)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0000c28c0}, 0xc0000bae00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0000c28c0}, 0xc0000bae00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc0002405a0, {0xaf8288, 0xc000366cc0})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:47:05 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:47:05 server.go:3197: http: panic serving [::1]:59920: template: index.html:1: unexpected "}" in command
+goroutine 114 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc00021eb50})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc00021eb50})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0002722a0}, {0xa80040, 0xc000242b00}, {0xc00040f3d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0002722a0}, 0xc000236b00)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0002722a0}, 0xc000236b00)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0002722a0}, 0xc000236b00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0002722a0}, 0xc000236b00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc000240640, {0xaf8288, 0xc000223000})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:47:09 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:47:09 server.go:3197: http: panic serving [::1]:59924: template: index.html:1: unexpected "}" in command
+goroutine 119 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc000185310})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc000185310})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0001b49a0}, {0xa80040, 0xc0001b3680}, {0xc00023f3d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0001b49a0}, 0xc0001d4f00)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0001b49a0}, 0xc0001d4f00)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0001b49a0}, 0xc0001d4f00)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0001b49a0}, 0xc0001d4f00)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc0002406e0, {0xaf8288, 0xc000367100})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:47:09 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:47:09 server.go:3197: http: panic serving [::1]:59926: template: index.html:1: unexpected "}" in command
+goroutine 107 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc00030e310})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc00030e310})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0001b40e0}, {0xa80040, 0xc0000ca800}, {0xc0004793d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0001b40e0}, 0xc0000ba000)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0001b40e0}, 0xc0000ba000)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0001b40e0}, 0xc0000ba000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0001b40e0}, 0xc0000ba000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc0002400a0, {0xaf8288, 0xc000222040})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:47:11 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:47:11 server.go:3197: http: panic serving [::1]:59928: template: index.html:1: unexpected "}" in command
+goroutine 123 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc000012f00})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc000012f00})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc000116000}, {0xa80040, 0xc000128180}, {0xc0004793d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc000116000}, 0xc0001d4100)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc000116000}, 0xc0001d4100)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc000116000}, 0xc0001d4100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc000116000}, 0xc0001d4100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc000096000, {0xaf8288, 0xc000366240})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:47:11 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:47:11 server.go:3197: http: panic serving [::1]:59930: template: index.html:1: unexpected "}" in command
+goroutine 131 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc00030e680})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc00030e680})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0004fe0e0}, {0xa80040, 0xc0001b2400}, {0xc0004753d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0004fe0e0}, 0xc0001d4200)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0004fe0e0}, 0xc0001d4200)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0004fe0e0}, 0xc0001d4200)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0004fe0e0}, 0xc0001d4200)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011e280, {0xaf8288, 0xc000366340})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:47:12 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:47:12 server.go:3197: http: panic serving [::1]:59932: template: index.html:1: unexpected "}" in command
+goroutine 108 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc0001841e0})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc0001841e0})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0004fe1c0}, {0xa80040, 0xc0001b2780}, {0xc0000f73d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0004fe1c0}, 0xc000546000)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0004fe1c0}, 0xc000546000)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0004fe1c0}, 0xc000546000)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0004fe1c0}, 0xc000546000)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc000240140, {0xaf8288, 0xc000186240})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:47:13 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:47:13 server.go:3197: http: panic serving [::1]:59934: template: index.html:1: unexpected "}" in command
+goroutine 132 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc000184550})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc000184550})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc00055c0e0}, {0xa80040, 0xc000242680}, {0xc0004753d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc00055c0e0}, 0xc000546100)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc00055c0e0}, 0xc000546100)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc00055c0e0}, 0xc000546100)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc00055c0e0}, 0xc000546100)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc00011e8c0, {0xaf8288, 0xc00002c600})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:47:13 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:47:13 server.go:3197: http: panic serving [::1]:59936: template: index.html:1: unexpected "}" in command
+goroutine 147 [running]:
+net/http.(*conn).serve.func1()
+	/usr/lib/go-1.18/src/net/http/server.go:1825 +0x148
+panic({0xa3e880, 0xc000184640})
+	/usr/lib/go-1.18/src/runtime/panic.go:844 +0x25a
+html/template.Must(0x0, {0xaf5b60, 0xc000184640})
+	/usr/lib/go-1.18/src/html/template/template.go:374 +0x8b
+todo_app/app/controllers.generateHTML({0xaf8048, 0xc0004fe2a0}, {0xa80040, 0xc0001b2b00}, {0xc0000f33d8, 0x3, 0x3})
+	/home/tatsuki/go/src/todo_app/app/controllers/server.go:17 +0x16f
+todo_app/app/controllers.index({0xaf8048, 0xc0004fe2a0}, 0xc0001d4400)
+	/home/tatsuki/go/src/todo_app/app/controllers/route_main.go:28 +0x589
+net/http.HandlerFunc.ServeHTTP(0xad23e8, {0xaf8048, 0xc0004fe2a0}, 0xc0001d4400)
+	/usr/lib/go-1.18/src/net/http/server.go:2084 +0x43
+net/http.(*ServeMux).ServeHTTP(0xd27280, {0xaf8048, 0xc0004fe2a0}, 0xc0001d4400)
+	/usr/lib/go-1.18/src/net/http/server.go:2462 +0x135
+net/http.serverHandler.ServeHTTP({0xc0001b4000}, {0xaf8048, 0xc0004fe2a0}, 0xc0001d4400)
+	/usr/lib/go-1.18/src/net/http/server.go:2916 +0x474
+net/http.(*conn).serve(0xc0000960a0, {0xaf8288, 0xc000366940})
+	/usr/lib/go-1.18/src/net/http/server.go:1966 +0x193c
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.18/src/net/http/server.go:3071 +0x9cf
+2022/05/09 22:50:58 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:50:58 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:51:10 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:51:11 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:51:20 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:51:21 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:52:25 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:52:25 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:57:12 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:57:12 route_main.go:24: near "FROM": syntax error
+2022/05/09 22:57:14 route_main.go:24: near "FROM": syntax error
+2022/05/09 23:07:19 route_main.go:24: near "FROM": syntax error
+2022/05/09 23:07:29 route_main.go:52: near "FROM": syntax error
+2022/05/09 23:07:29 route_main.go:24: near "FROM": syntax error
+2022/05/09 23:07:29 route_main.go:24: near "FROM": syntax error
+2022/05/09 23:07:38 route_main.go:24: near "FROM": syntax error
+2022/05/09 23:07:46 route_main.go:52: near "FROM": syntax error
+2022/05/09 23:07:46 route_main.go:24: near "FROM": syntax error
+2022/05/09 23:07:46 route_main.go:24: near "FROM": syntax error
+2022/05/09 23:34:46 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:34:47 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:34:51 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:34:51 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:35:00 route_main.go:71: near "FROM": syntax error
+2022/05/09 23:35:00 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:35:11 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:35:12 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:35:15 route_main.go:71: near "FROM": syntax error
+2022/05/09 23:35:15 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:35:20 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:35:20 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:39:08 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:39:08 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:39:12 route_main.go:71: near "FROM": syntax error
+2022/05/09 23:39:12 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:39:16 route_main.go:94: near "FROM": syntax error
+2022/05/09 23:39:16 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:39:16 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:46:16 route_main.go:112: near "FROM": syntax error
+2022/05/09 23:46:16 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:46:16 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:46:17 route_main.go:112: near "FROM": syntax error
+2022/05/09 23:46:17 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:46:17 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:49:25 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:49:25 route_main.go:25: near "FROM": syntax error
+2022/05/09 23:51:14 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:04:38 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:04:38 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:05:10 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:05:10 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:05:21 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:05:21 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:07:04 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:07:04 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:12:32 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:12:32 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:13:33 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:13:33 route_main.go:25: near "FROM": syntax error
+2022/05/10 00:14:49 route_main.go:25: near "FROM": syntax error
