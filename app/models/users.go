@@ -29,7 +29,7 @@ func (u *User) CreateUser() (err error) {
 		name,
 		email,
 		password,
-		created_at) values (&1,$2,$3,$4,$5)`
+		created_at) values ($1,$2,$3,$4,$5)`
 
 	_, err = Db.Exec(cmd, createUUID(),
 		u.Name,
